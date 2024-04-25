@@ -1,0 +1,137 @@
+{
+  "vertices": [
+    {"name": "Rectangle1", "length": 200, "angle": 0, "direction": "Down"},
+    {"name": "Rectangle2", "length": 200, "angle": 1.5708, "direction": "Left"},
+    {"name": "Rectangle3", "length": 200, "angle": 0, "direction": "Up"},
+    {"name": "Rectangle4", "length": 200, "angle": 1.5708, "direction": "Right"},
+    {"name": "Rectangle5", "length": 180, "angle": 0},
+    {"name": "Rectangle6", "length": 160, "angle": 1.5708},
+    {"name": "Rectangle7", "length": 180, "angle": 0},
+    {"name": "Rectangle8", "length": 160, "angle": 1.5708},
+    {"name": "Rectangle9", "length": 160, "angle": 1.5708}
+  ],
+  "edges": [
+    {
+      "from": "Rectangle1",
+      "to": "Rectangle2",
+      "connectionType": {
+        "type": "EndConnectionObliqueEdge",
+        "position": "DownRight"
+      }
+    },
+    {
+      "from": "Rectangle2",
+      "to": "Rectangle3",
+      "connectionType": {
+        "type": "EndConnectionObliqueEdge",
+        "position": "DownLeft"
+      }
+    },
+    {
+      "from": "Rectangle3",
+      "to": "Rectangle4",
+      "connectionType": {
+        "type": "EndConnectionObliqueEdge",
+        "position": "UpLeft"
+      }
+    },
+    {
+      "from": "Rectangle4",
+      "to": "Rectangle1",
+      "connectionType": {
+        "type": "EndConnectionObliqueEdge",
+        "position": "UpRight"
+      }
+    },
+    {
+      "from": "Rectangle1",
+      "to": "Rectangle5",
+      "connectionType": {
+        "type": "FullConnection",
+        "position": "Down"
+      }
+    },
+    {
+      "from": "Rectangle2",
+      "to": "Rectangle6",
+      "connectionType": {
+        "type": "FullConnection",
+        "position": "Left"
+      }
+    },
+    {
+      "from": "Rectangle3",
+      "to": "Rectangle7",
+      "connectionType": {
+        "type": "FullConnection",
+        "position": "Up"
+      }
+    },
+    {
+      "from": "Rectangle4",
+      "to": "Rectangle8",
+      "connectionType": {
+        "type": "FullConnection",
+        "position": "Right"
+      }
+    },
+    {
+      "from": "Rectangle5",
+      "to": "Rectangle6",
+      "connectionType": {
+        "type": "EndConnectionStraightEdge",
+        "sourceSide": "Down",
+        "targetSide": "Up",
+        "position": "DownRight"
+      }
+    },
+    {
+      "from": "Rectangle6",
+      "to": "Rectangle7",
+      "connectionType": {
+        "type": "EndConnectionStraightEdge",
+        "sourceSide": "Down",
+        "targetSide": "Up",
+        "position": "DownLeft"
+      }
+    },
+    {
+      "from": "Rectangle7",
+      "to": "Rectangle8",
+      "connectionType": {
+        "type": "EndConnectionStraightEdge",
+        "sourceSide": "Up",
+        "targetSide": "Down",
+        "position": "UpLeft"
+      }
+    },
+    {
+      "from": "Rectangle8",
+      "to": "Rectangle5",
+      "connectionType": {
+        "type": "EndConnectionStraightEdge",
+        "sourceSide": "Up",
+        "targetSide": "Down",
+        "position": "UpRight"
+      }
+    },
+    {
+      "from": "Rectangle5",
+      "to": "Rectangle9",
+      "connectionType": {
+        "type": "MidConnection",
+        "position": "Down",
+        "offset": -10
+      }
+    },
+    {
+      "from": "Rectangle7",
+      "to": "Rectangle9",
+      "connectionType": {
+        "type": "MidConnection",
+        "position": "Up",
+        "offset": -10
+      }
+    }
+  ]
+}

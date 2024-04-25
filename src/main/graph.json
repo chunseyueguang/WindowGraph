@@ -80,8 +80,7 @@
       "to": "Rectangle6",
       "connectionType": {
         "type": "EndConnectionStraightEdge",
-        "sourceSide": "Down",
-        "targetSide": "Up",
+        "angle": 1.5708,
         "position": "DownRight"
       }
     },
@@ -90,8 +89,7 @@
       "to": "Rectangle7",
       "connectionType": {
         "type": "EndConnectionStraightEdge",
-        "sourceSide": "Down",
-        "targetSide": "Up",
+        "angle": 1.5708,
         "position": "DownLeft"
       }
     },
@@ -100,8 +98,7 @@
       "to": "Rectangle8",
       "connectionType": {
         "type": "EndConnectionStraightEdge",
-        "sourceSide": "Up",
-        "targetSide": "Down",
+        "angle": 1.5708,
         "position": "UpLeft"
       }
     },
@@ -110,8 +107,7 @@
       "to": "Rectangle5",
       "connectionType": {
         "type": "EndConnectionStraightEdge",
-        "sourceSide": "Up",
-        "targetSide": "Down",
+        "angle": 1.5708,
         "position": "UpRight"
       }
     },

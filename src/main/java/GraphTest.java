@@ -76,16 +76,16 @@ public class GraphTest {
 
 
         graph.addEdge(v5, v6, new Edge(v5,v6,
-                new ConnectionType(new EndConnectionStraightEdge(Vertex.ConnectionSide.Down,Vertex.ConnectionSide.Up),
+                new ConnectionType(new EndConnectionStraightEdge(0),
                         ConnectionType.CenterRelativePosition.DownRight)));
         graph.addEdge(v6, v7, new Edge(v6,v7,
-                new ConnectionType(new EndConnectionStraightEdge(Vertex.ConnectionSide.Down,Vertex.ConnectionSide.Up),
+                new ConnectionType(new EndConnectionStraightEdge(0),
                         ConnectionType.CenterRelativePosition.DownLeft)));
         graph.addEdge(v7, v8, new Edge(v7,v8,
-                new ConnectionType(new EndConnectionStraightEdge(Vertex.ConnectionSide.Up,Vertex.ConnectionSide.Down),
+                new ConnectionType(new EndConnectionStraightEdge(Math.PI),
                         ConnectionType.CenterRelativePosition.UpLeft)));
         graph.addEdge(v8, v5, new Edge(v8,v5,
-                new ConnectionType(new EndConnectionStraightEdge(Vertex.ConnectionSide.Up,Vertex.ConnectionSide.Down),
+                new ConnectionType(new EndConnectionStraightEdge(Math.PI),
                         ConnectionType.CenterRelativePosition.UpRight)));
 
 

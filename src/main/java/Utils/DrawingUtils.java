@@ -111,8 +111,7 @@ public class DrawingUtils {
 
                 ((EndConnectionStraightEdge) edge.getConnectionType().getConnType()).calculateDestinationNodeCenterCoordinate(
                         source,destination,
-                        ((EndConnectionStraightEdge) edge.getConnectionType().getConnType()).getSourceSide(),
-                        ((EndConnectionStraightEdge) edge.getConnectionType().getConnType()).getDestinationSide(),
+                        ((EndConnectionStraightEdge) edge.getConnectionType().getConnType()).getNormalizedAngle(),
                         edge.getConnectionType().getV2u()
                 );
                 DrawingUtils.drawRotatedRectangle(g2d, destination);

@@ -35,9 +35,9 @@ public class GraphBuilder {
                 ConnectionType connectionType;
                 if (offset != null) {
                     // 使用四参数构造函数
-                    if(ec.getConnectionType().getSourceSide() != null && ec.getConnectionType().getTargetSide() != null){
+                    if(ec.getConnectionType().getAngle() != -1){
                         connectionType = new ConnectionType(
-                                ConnectionType.createConnectionType(ec.getConnectionType().getType(),ec.getConnectionType().getSourceSide(),ec.getConnectionType().getTargetSide()),
+                                ConnectionType.createConnectionType(ec.getConnectionType().getType(),ec.getConnectionType().getAngle()),
                                 ConnectionType.CenterRelativePosition.valueOf(ec.getConnectionType().getPosition()),
                                 offset
                         );

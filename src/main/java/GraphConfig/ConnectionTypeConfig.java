@@ -5,23 +5,14 @@ public class ConnectionTypeConfig {
     private String position; // 如 "DownRight", "Left", "Up"
     private Integer offset; // Optional, only for some connection types
 
-    private String sourceSide;
-    private String targetSide;
+    private double angle = -1; // Optional, only for some connection types
 
-    public String getSourceSide() {
-        return sourceSide;
+    public double getAngle() {
+        return angle;
     }
 
-    public void setSourceSide(String sourceSide) {
-        this.sourceSide = sourceSide;
-    }
-
-    public String getTargetSide() {
-        return targetSide;
-    }
-
-    public void setTargetSide(String targetSide) {
-        this.targetSide = targetSide;
+    public void setAngle(double angle) {
+        this.angle = angle;
     }
 
     // Getters and Setters

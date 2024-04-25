@@ -1,13 +1,6 @@
 package Graph;
 
 public class Vertex {
-    public enum ConnectionSide {
-        Up,
-        Down,
-        Left,
-        Right
-    }
-
     public String name;
     public int longSide;     // 长
     public int shortSide = 10;
@@ -15,7 +8,6 @@ public class Vertex {
     public int x = 0;
     public int y = 0;
 
-//    public int trapeziumAngle = 45;   // 绘制梯形 角度
     public enum trapeziumDirection{
         Up,
         Down,
